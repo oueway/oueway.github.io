@@ -1,0 +1,123 @@
+[
+  {
+    "catalog" : {
+      "query" : "\\div[@class='centent']\ul\li"
+    },
+    "name" : "飘天文学网",
+    "page" : {
+      "previousTitle" : "上一章",
+      "previousLinkQuery" : "\\div[@class='toplink']\a",
+      "nextTitle" : "下一章",
+      "titleQuery" : "\\body\h1",
+      "nextLinkQuery" : "\\div[@class='toplink']\a",
+      "contentQuery" : "\\body"
+    },
+    "capture" : {
+      "catalogScript" : "var returnValue = null;var imgs = document.getElementsByTagName('img');for (var i = 0; i < imgs.length; i++) {var img = imgs[i];if (img.src === 'http:\\www.piaotian.com\images\dian.gif') { returnValue = img.parentNode.href; break;}}\nreturnValue",
+      "nameScript" : "var returnValue = null;var h1s = document.getElementsByTagName('h1');if (h1s.length > 0) {var h1 = h1s[0];returnValue = h1.innerText;}\nreturnValue"
+    },
+    "url" : "http:\\www.piaotian.com",
+    "textEncode" : "gb2312"
+  },
+  {
+    "catalog" : {
+      "query" : "\\div[@class='zhangjie clear']\ul\li",
+      "reverse" : true
+    },
+    "name" : "UU看书网",
+    "page" : {
+      "previousTitle" : "上一章",
+      "previousLinkQuery" : "\\div[@class='fanye_cen']\span\a[@id='prev']",
+      "nextTitle" : "下一章",
+      "titleQuery" : "\\div[@class='h1title']\h1[@id='timu']",
+      "nextLinkQuery" : "\\div[@class='fanye_cen']\a[@id='next']",
+      "contentQuery" : "\\div[@id='contentbox']"
+    },
+    "capture" : {
+      "catalogScript" : "var returnValue = null;function readUrlParams(){var querys = location.search;var paraString = querys.substring(querys.indexOf('?')+1, querys.length).split('&');var paramsObj = {};var j = null;for (var i = 0; (j = paraString[i]); i++ ){    paramsObj[j.substring(0,j.indexOf('=')).toLowerCase()] = j.substring(j.indexOf('=')+1,j.length);}return paramsObj;}var params = readUrlParams();if (params) {if (params.id) {returnValue = 'http:\\www.uukanshu.net\b\' + params.id + '\';}}\nreturnValue",
+      "nameScript" : "var returnTitle = null;var divs = document.getElementsByClassName('book-info');if (divs && divs[0]) {var h1s = divs[0].getElementsByTagName('h1');if (h1s) {returnTitle = h1s[0].innerText;}}\nreturnTitle"
+    },
+    "url" : "http:\\sj.uukanshu.net",
+    "textEncode" : "gb2312"
+  },
+  {
+    "catalog" : {
+      "query" : "\\div[@class='content']\div[@class='list']\ul\li"
+    },
+    "name" : "书迷楼",
+    "page" : {
+      "previousTitle" : "上一页",
+      "previousLinkQuery" : "\\div[@class='content']\div[@id='content']\a",
+      "nextTitle" : "下一页",
+      "titleQuery" : "\\div[@class='content']\div[@id='content']\div[@class='title']\h2",
+      "nextLinkQuery" : "\\div[@class='content']\div[@id='content']\a",
+      "contentQuery" : "\\div[@class='content']\div[@id='content']\p"
+    },
+    "capture" : {
+      "catalogScript" : "var returnValue = null;var pathname = document.location.pathname;if (pathname) {returnValue = 'http:\\www.shumilou.co' + pathname;}\nreturnValue",
+      "nameScript" : "var returnTitle = null;var divs = document.getElementsByClassName('hdbody');if (divs && divs[0]) {var div = divs[0];var divs = div.getElementsByClassName('txtd');if (divs && divs[0]) {var div = divs[0];var h1s = div.getElementsByTagName('h1');if (h1s && h1s[0]) {returnTitle = h1s[0].innerText;if (returnTitle) {returnTitle = returnTitle.replace(\^《\g, '');returnTitle = returnTitle.replace(\》$\g, '');}}}}\nreturnTitle"
+    },
+    "url" : "http:\\m.shumilou.co",
+    "textEncode" : "gbk"
+  },
+  {
+    "name" : "红袖添香",
+    "page" : {
+      "previousTitle" : "上一章",
+      "previousLinkQuery" : "\\div[@id='upPage']\a",
+      "nextTitle" : "下一章",
+      "titleQuery" : "\\div[@id='htmlmain']\h2[@id='chaptertitle']",
+      "nextLinkQuery" : "\\div[@id='upPage']\a",
+      "contentQuery" : "\\div[@id='htmlmain']\div[@id='htmlContent']"
+    },
+    "capture" : {
+      "catalogScript" : "var returnValue = null;var ol = document.getElementById('alllist');if (ol) {var li = ol.lastElementChild;if (li) {var a = li.firstElementChild;if (a && a.href) { returnValue = a.href;}}}\nreturnValue",
+      "nameScript" : "var returnTitle = null;var div = document.getElementById('htmlbookinfo');if (div) {var h1s = div.getElementsByTagName('h1');if (h1s) {returnTitle = h1s[0].innerText;}}\nreturnTitle"
+    },
+    "url" : "http:\\www.hongxiu.com",
+    "catalog" : {
+      "query" : "\\body\ul\li"
+    }
+  },
+  {
+    "catalog" : {
+      "query" : "\\div[@class='mu_contain']\ul[@class='mulu_list']\li"
+    },
+    "name" : "69书吧",
+    "page" : {
+      "previousTitle" : "上一章",
+      "previousLinkQuery" : "\\div[@class='yd_center']\span\a",
+      "nextTitle" : "下一章",
+      "titleQuery" : "\\h1",
+      "nextLinkQuery" : "\\div[@class='yd_center']\span\a",
+      "contentQuery" : "\\div[@class='yd_text2']"
+    },
+    "capture" : {
+      "catalogScript" : "var returnValue = null;var divs = document.getElementsByClassName('zhbook_info');if (divs && divs[0]) {var links = divs[0].getElementsByTagName('a');for (var i = 0; i < links.length; i++) {var a = links[i];if (a.innerText === '点击阅读') {returnValue = a.href; break;}}}\nreturnValue",
+      "nameScript" : "var returnTitle = null;var divs = document.getElementsByClassName('zhbook_info');if (divs && divs[0]) {var h1s = divs[0].getElementsByTagName('h1');if (h1s) {returnTitle = h1s[0].innerText;}}\nreturnTitle"
+    },
+    "url" : "http:\\www.69shu.com",
+    "textEncode" : "gbk"
+  },
+  {
+    "name" : "69书屋",
+    "page" : {
+      "previousTitle" : "上一章",
+      "previousLinkQuery" : "\\div[@class='bookname']\div[@class='bottem1']\a",
+      "nextTitle" : "下一章",
+      "titleQuery" : "\\div[@class='bookname']\h1",
+      "nextLinkQuery" : "\\div[@class='bookname']\div[@class='bottem1']\a",
+      "contentQuery" : "\\div[@id='content']"
+    },
+    "capture" : {
+      "catalogScript" : "var returnValue = null;var maininfo = document.getElementById('maininfo');if (maininfo) {var divs = maininfo.getElementsByTagName('div');if (divs && divs.length == 2 && divs[0].id === 'info') {returnValue = document.URL;}}\nreturnValue",
+      "nameScript" : "var returnTitle = null;var maininfo = document.getElementById('maininfo');if (maininfo) {var divs = maininfo.getElementsByTagName('div');if (divs && divs.length == 2 && divs[0].id === 'info') {var h1s = divs[0].getElementsByTagName('h1');if (h1s && h1s[0]) {returnTitle = h1s[0].innerText;}}}\nreturnTitle"
+    },
+    "pcVersion" : true,
+    "textEncode" : "gbk",
+    "url" : "http:\\www.69shuwu.com",
+    "catalog" : {
+      "query" : "\\div[@id='list']\dl\dd"
+    }
+  }
+]
