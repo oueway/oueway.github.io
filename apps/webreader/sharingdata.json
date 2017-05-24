@@ -61,6 +61,26 @@
     "textEncode": "gbk"
   },
   {
+    "catalog": {
+      "query": "//table/tbody/tr/td/div[@class='dccss']"
+    },
+    "name": "乐文小说网",
+    "page": {
+      "previousTitle": "上一页",
+      "previousLinkQuery": "//div[@class='content']/div[@id='content']/a",
+      "nextTitle": "下一页",
+      "titleQuery": "//div[@class='content']/div[@id='content']/div[@class='title']/h2",
+      "nextLinkQuery": "//div[@class='content']/div[@id='content']/a",
+      "contentQuery": "//div[@class='content']/div[@id='content']/p"
+    },
+    "capture": {
+      "catalogScript": "document.location.href",
+      "nameScript": "var returnTitle = null var divs = document.getElementsByClassName('kfml') if (divs && divs[0]) { var div = divs[0] var divs = div.getElementsByClassName('infot') if (divs && divs[0]) { var div = divs[0] var h1s = div.getElementsByTagName('h1') if (h1s && h1s[0]) {returnTitle = h1s[0].innerText;} }} returnTitle"
+    },
+    "url": "http://www.lwxs520.com",
+    "textEncode": "utf-8"
+  },
+  {
     "name": "红袖添香",
     "page": {
       "previousTitle": "上一章",
