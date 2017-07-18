@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <title>Hotel Locator Dev Release(iOS)</title>
+    <link rel="stylesheet"  href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+    <script type="text/javascript" src="more_dev.js"></script>
+<style type="text/css">
+.ui-bar-e {
+border: 1px solid #7d0d16;
+background: #7d0d16;
+color: #fff;
+text-shadow: 0 1px 0 #888;
+background-image: -moz-linear-gradient(top, #fceda7, #7d0d16);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fceda7), color-stop(1, #7d0d16));
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fceda7', EndColorStr='#7d0d16')"
+}
+</style>
+<script language="javascript">
+var moreBuildsOpened = false;
+function moreBuilds()
+{
+    if (moreBuildsOpened){
+        moreBuildsOpened = false;
+        document.getElementById("more_builds_div").innerHTML = "";
+        document.getElementById("more_linker").innerText = "More Builds >>>";
+    }
+    else{
+        var i = 1;
+        var count = more_builds.length / 2;
+        var builds_content = "";
+        for (; i < count; i++){
+            builds_content += "<ul data-role=\"listview\" data-inset=\"true\" data-divider-theme=\"e\">            <li data-role=\"list-divider\">" + more_builds[i*2] + "</li>            <li><a href=\"itms-services://?action=download-manifest&url=https://s3.amazonaws.com/oueway.github.io/ios/clchotellocator/" + more_builds[i*2+1] + "/Info.plist\" rel=external>Download</a></li>            <li><a href=\"https://s3.amazonaws.com/oueway.github.io/ios/clchotellocator/" + more_builds[i*2+1] + "/about.html\" >About</a></li>            </ul>";
+        }
+        if (builds_content.length < 10){
+            builds_content = "<ul><li>None</li></ul>";
+        }
+        document.getElementById("more_builds_div").innerHTML = builds_content;
+        moreBuildsOpened = true;
+        document.getElementById("more_linker").innerText = "Close More Builds <<<";
+        document.getElementById("more_builds_div").scrollIntoView();
+    }
+}
+</script>
+</head>
+<body>
+    <div data-role="page">
+    <div data-role="header" data-theme="a">
+    <a onclick="javascript:document.location='../../';" class="ui-btn-left" data-icon="arrow-l">Home</a>
+    <h1>Hotel Locator Dev</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true" data-divider-theme="e">
+            <li data-role="list-divider">Hotel Locator iOS - Auto Release</li>
+            <li><a href="itms-services://?action=download-manifest&url=https://s3.amazonaws.com/oueway.github.io/ios/clchotellocator/20150911_150806_dev/Info.plist" rel=external>Download 1.10.0.150806</a></li>
+            <li><font style="font-size:14px;font-weight:normal;color:#7d0d16;">Hotel Locator<br>1.10.0.150806 (iOS 7+; 32,64-bit)<br>2015-09-11 10:27<br></font><br><p style="font-size:14px;font-weight:bold;">Notes:</p><font style="font-size:12px;font-weight:normal;">Dev Test build.<br></font><br><br><font style="font-size:14px;font-weight:bold;">Default Server: </font><font style="font-size:14px;font-weight:normal;">Staging</font></li>
+
+        </ul>
+
+        <ul data-role="listview" data-inset="true" data-divider-theme="e">
+            <li><a href="javascript:document.location='help.html'">Install Failed?</a></li>
+        </ul>
+        <ul data-role="listview" data-inset="true" data-divider-theme="e">
+            <li><a href="mailto:aiguo.yin@fleetcor.com; wei.du@fleetcor.com">Email Feedback</a></li>
+        </ul>
+        <ul data-role="listview" data-inset="true" data-divider-theme="e">
+            <li><a href="javascript:moreBuilds()" id="more_linker" rel=external>More Builds >>></a></li>
+        </ul>
+    </div>
+
+<div data-role="content" id="more_builds_div"></div>
+
+</body>
+</html>
