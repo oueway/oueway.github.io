@@ -62,7 +62,7 @@
   },
   {
     "catalog": {
-      "query": "//table/tbody/tr/td/div[@class='dccss']"
+      "query": "//tr/td/div[@class='dccss']"
     },
     "name": "乐文小说网",
     "page": {
