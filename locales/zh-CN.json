@@ -7,5 +7,12 @@
   "Privacy": "隐私",
   "REPORT_ISSUE": "报告错误",
   "Products": "产品",
-  "Country and Language": "国家和语言"
+  "Country and Language": "国家和语言",
+
+  "ios": "iOS",
+  "android": "Android",
+  "mac": "Mac",
+  "windows": "Windows",
+  
+  "NO_PRODUCTS": "{platform}产品还没有上架."
 }
