@@ -5,6 +5,9 @@
       location = "group:index.html">
    </FileRef>
    <FileRef
+      location = "group:res">
+   </FileRef>
+   <FileRef
       location = "group:ads">
    </FileRef>
    <FileRef
