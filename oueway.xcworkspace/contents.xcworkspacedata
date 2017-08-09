@@ -5,6 +5,12 @@
       location = "group:index.html">
    </FileRef>
    <FileRef
+      location = "group:ads">
+   </FileRef>
+   <FileRef
+      location = "group:home-ads">
+   </FileRef>
+   <FileRef
       location = "group:apps">
    </FileRef>
    <FileRef
