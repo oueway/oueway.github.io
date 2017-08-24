@@ -17,7 +17,7 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>$(PRODUCT_BUNDLE_IDENTIFIER).io8fix648</string>
+                <string>$(PRODUCT_BUNDLE_IDENTIFIER).io8fix220</string>
                 <key>bundle-version</key>
                 <string>1.1.0</string>
                 <key>kind</key>
