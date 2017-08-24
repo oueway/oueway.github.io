@@ -1,0 +1,15 @@
+{
+"supportedDevices":["iPhone5s", "iPhone5c", "iPadMini4G", "iPhone4S", "iPhone5", "iPadFourthGen4G", "iPad2Wifi", "iPad23G", "iPhone-3GS", "iPodTouchFifthGen", "iPadMini", "iPadFourthGen", "iPhone4", "iPodTouchourthGen", "iPadThirdGen", "iPadThirdGen4G"],
+
+"trackId":"alphabet",
+"trackName":"",
+"bundleId":"$(PRODUCT_BUNDLE_IDENTIFIER)",
+
+"version":"1.1.0.1708230",
+"releaseNotes":"<br>1. UI flow changes<br>2. Add social network sharing<br>3. Include Game Center management<br>4. Add Settings<br>5. Animations and effect sounds<br>6. bug fix<br><br>",
+"description":"<br>1. UI flow changes<br>2. Add social network sharing<br>3. Include Game Center management<br>4. Add Settings<br>5. Animations and effect sounds<br>6. bug fix<br><br>",
+"releaseDate":"2017-08-23 18:15:59",
+"sellerName":"Oueway",
+
+"build":{"color":"#7d0d16", "requiredOS":"iOS 7+", "arch":"32,64-bit", "server":"Production", "type":"Internal", "shortName":"", "build":"20170823_1708230"}
+}
