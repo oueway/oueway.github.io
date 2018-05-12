@@ -13,10 +13,10 @@
       "contentQuery": "//body"
     },
     "capture": {
-      "catalogScript": "var returnValue = null;\nvar imgs = document.getElementsByTagName('img');\nfor (var i = 0; i < imgs.length; i++) {\n  var img = imgs[i];\n  if (img.src === 'http://www.piaotian.com/images/dian.gif') {returnValue = img.parentNode.href; break;}\n}\nreturnValue",
+      "catalogScript": "var returnValue = null;\nvar imgs = document.getElementsByTagName('img');\nfor (var i = 0; i < imgs.length; i++) {\n  var img = imgs[i];\n  if (img.src === 'https://www.piaotian.com/images/dian.gif') {returnValue = img.parentNode.href; break;}\n}\nreturnValue",
       "nameScript": "var returnValue = null;var h1s = document.getElementsByTagName('h1');if (h1s.length > 0) {var h1 = h1s[0];returnValue = h1.innerText;}\nreturnValue"
     },
-    "url": "http://www.piaotian.com",
+    "url": "https://www.piaotian.com",
     "textEncode": "gb2312"
   },
   {
