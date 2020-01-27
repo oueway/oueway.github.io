@@ -79,7 +79,7 @@
       "catalogScript": "var returnValue = null;var pathname = document.location.pathname;if (pathname) {returnValue = 'http://www.shumilou.co' + pathname;}\nreturnValue",
       "nameScript": "var returnTitle = null;var divs = document.getElementsByClassName('hdbody');if (divs && divs[0]) {var div = divs[0];var divs = div.getElementsByClassName('txtd');if (divs && divs[0]) {var div = divs[0];var h1s = div.getElementsByTagName('h1');if (h1s && h1s[0]) {returnTitle = h1s[0].innerText;if (returnTitle) {returnTitle = returnTitle.replace(/^《/g, '');returnTitle = returnTitle.replace(/》$/g, '');}}}}\nreturnTitle"
     },
-    "url": "http://m.shumilou.co",
+    "url": "http://m.shumil.co",
     "textEncode": "gbk"
   },
   {
