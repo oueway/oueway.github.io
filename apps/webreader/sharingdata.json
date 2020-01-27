@@ -116,7 +116,7 @@
       "catalogScript": "var returnValue = null;var ol = document.getElementById('alllist');if (ol) {var li = ol.lastElementChild;if (li) {var a = li.firstElementChild;if (a && a.href) { returnValue = a.href;}}}\nreturnValue",
       "nameScript": "var returnTitle = null;var div = document.getElementById('htmlbookinfo');if (div) {var h1s = div.getElementsByTagName('h1');if (h1s) {returnTitle = h1s[0].innerText;}}\nreturnTitle"
     },
-    "url": "http://www.hongxiu.com",
+    "url": "https://www.hongxiu.com",
     "catalog": {
       "query": "//body/ul/li"
     }
@@ -157,7 +157,7 @@
     },
     "pcVersion": true,
     "textEncode": "gbk",
-    "url": "http://www.69shuwu.com",
+    "url": "https://www.692211.net",
     "catalog": {
       "query": "//div[@id='list']/dl/dd"
     }
