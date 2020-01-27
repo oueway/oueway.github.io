@@ -16,7 +16,7 @@
       "catalogScript": "var returnValue = null;\nvar imgs = document.getElementsByTagName('img');\nfor (var i = 0; i < imgs.length; i++) {\n  var img = imgs[i];\n  if (img.src === 'https://www.piaotian.com/images/dian.gif') {returnValue = img.parentNode.href; break;}\n}\nreturnValue",
       "nameScript": "var returnValue = null;var h1s = document.getElementsByTagName('h1');if (h1s.length > 0) {var h1 = h1s[0];returnValue = h1.innerText;}\nreturnValue"
     },
-    "url": "https://www.piaotian.com",
+    "url": "https://www.ptwxz.com",
     "textEncode": "gb2312"
   },
   {
@@ -37,8 +37,30 @@
       "catalogScript": "var returnValue = null;function readUrlParams(){var querys = location.search;var paraString = querys.substring(querys.indexOf('?')+1, querys.length).split('&');var paramsObj = {};var j = null;for (var i = 0; (j = paraString[i]); i++ ){    paramsObj[j.substring(0,j.indexOf('=')).toLowerCase()] = j.substring(j.indexOf('=')+1,j.length);}return paramsObj;}var params = readUrlParams();if (params) {if (params.id) {returnValue = 'http://www.uukanshu.net/b/' + params.id + '/';}}\nreturnValue",
       "nameScript": "var returnTitle = null;var divs = document.getElementsByClassName('book-info');if (divs && divs[0]) {var h1s = divs[0].getElementsByTagName('h1');if (h1s) {returnTitle = h1s[0].innerText;}}\nreturnTitle"
     },
-    "url": "http://sj.uukanshu.net",
+    "url": "http://sj.uukanshu.com",
     "textEncode": "gb2312"
+  },
+  {
+      "name": "全本小说网",
+      "url": "http://www.quanben-xiaoshuo.com",
+      "pcVersion": true,
+      "textEncode": "utf-8",
+      "capture": {
+          "catalogQuery": "//div[@class='ml130']/div[@class='info']/a[@class='button_1 s1']/return[@return='href']",
+          "nameQuery": "//div[@class='ml130']/h1[@class='title']/return[@return='innerText']"
+      },
+      "catalog": {
+          "query": "//div[@class='content2']/div[@class='chapter']/ul/li",
+          "reverse": false
+      },
+      "page": {
+          "previousTitle": "上一章",
+          "previousLinkQuery": "//div[@class='box']/div[@class='short_chap tc']/a",
+          "nextTitle": "下一章",
+          "titleQuery": "//div[@class='box']/h1[@class='title1 tc']",
+          "nextLinkQuery": "//div[@class='box']/div[@class='short_chap tc']/a",
+          "contentQuery": "//div[@id='articlebody']"
+      }
   },
   {
     "catalog": {
