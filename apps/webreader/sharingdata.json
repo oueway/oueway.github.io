@@ -17,7 +17,7 @@
       "nameScript": "var returnValue = null;var h1s = document.getElementsByTagName('h1');if (h1s.length > 0) {var h1 = h1s[0];returnValue = h1.innerText;}\nreturnValue"
     },
     "url": "https://www.ptwxz.com",
-    "textEncode": "gb2312"
+    "textEncode": "gbk"
   },
   {
     "catalog": {
