@@ -21,21 +21,21 @@
   },
   {
     "catalog": {
-      "query": "//div[@class='zhangjie clear']/ul/li",
-      "reverse": true
+      "query": "//div[@class='ml-list']/ul[@id='chapterList']/li",
+      "reverse": false
     },
     "name": "UU看书网",
     "page": {
-      "previousTitle": "上一章",
-      "previousLinkQuery": "//div[@class='fanye_cen']/span/a[@id='prev']",
-      "nextTitle": "下一章",
-      "titleQuery": "//div[@class='h1title']/h1[@id='timu']",
-      "nextLinkQuery": "//div[@class='fanye_cen']/a[@id='next']",
-      "contentQuery": "//div[@id='contentbox']"
+      "previousTitle": "[上一章]",
+      "previousLinkQuery": "//div[@class='read-page']/div[@class='rp-switch']/a[@id='read_pre']",
+      "nextTitle": "[下一章]",
+      "titleQuery": "//div[@id='divContent']/h3",
+      "nextLinkQuery": "//div[@class='read-page']/div[@class='rp-switch']/a[@id='read_next']",
+      "contentQuery": "//div[@id='read-page']/div[@id='bookContent']"
     },
     "capture": {
-      "catalogScript": "var returnValue = null;function readUrlParams(){var querys = location.search;var paraString = querys.substring(querys.indexOf('?')+1, querys.length).split('&');var paramsObj = {};var j = null;for (var i = 0; (j = paraString[i]); i++ ){    paramsObj[j.substring(0,j.indexOf('=')).toLowerCase()] = j.substring(j.indexOf('=')+1,j.length);}return paramsObj;}var params = readUrlParams();if (params) {if (params.id) {returnValue = 'http://www.uukanshu.net/b/' + params.id + '/';}}\nreturnValue",
-      "nameScript": "var returnTitle = null;var divs = document.getElementsByClassName('book-info');if (divs && divs[0]) {var h1s = divs[0].getElementsByTagName('h1');if (h1s) {returnTitle = h1s[0].innerText;}}\nreturnTitle"
+      "catalogScript": "document.location.href",
+      "nameScript": "var returnTitle = null;var h1s = document.getElementsByClassName('bookname');if (h1s && h1s[0]) { returnTitle = h1s[0].innerText;}\nreturnTitle"
     },
     "url": "http://sj.uukanshu.com",
     "textEncode": "gb2312"
@@ -141,6 +141,28 @@
     "url": "http://www.69shu.com",
     "textEncode": "gbk"
   },
+  {
+    "catalog": {
+      "query": "//div[@class='catalog']/ul/li[@class='chapter']"
+    },
+    "name": "爱下电子书",
+    "pcVersion": true,
+    "page": {
+      "previousTitle": "[←]上一章",
+      "previousLinkQuery": "//div[@class='link']/a",
+      "nextTitle": "下一章[→]",
+      "titleQuery": "//div[@class='line']/h1",
+      "nextLinkQuery": "//div[@class='link']/a",
+      "contentQuery": "//div[@class='content']"
+    },
+    "capture": {
+      "catalogScript": "window.location.href",
+      "nameScript": "var divs = document.getElementsByClassName('d_info'); if (divs && divs[0]) { var h1s = divs[0].getElementsByTagName('h1'); h1s[0].innerText }"
+    },
+    "url": "https://www.aixdzs.com",
+    "textEncode": "utf-8"
+  },
+  
   {
     "name": "69书屋",
     "page": {
