@@ -1,0 +1,46 @@
+{
+"resultCount":1,
+"results": [
+{
+"kind":"software", "features":[],"wrapperType":"software","isGameCenterEnabled":false,
+
+"supportedDevices":["iPhone7Plus", "iPhone7", "iPhone6sPlus", "iPhone6s", "iPhone6Plus", "iPhone6", "iPhone5s", "iPhone5c", "iPadMini4G", "iPhone4S", "iPhone5", "iPadFourthGen4G", "iPad2Wifi", "iPad23G", "iPhone-3GS", "iPodTouchFifthGen", "iPadMini", "iPadFourthGen", "iPhone4", "iPodTouchourthGen", "iPadThirdGen", "iPadThirdGen4G"],
+"artistViewUrl":"",
+"artworkUrl60":"",
+"artworkUrl512":"",
+"artistId":"oueway",
+"artistName":"Oueway",
+"currency":"USD", "price":0.00, "formattedPrice":"Free",
+
+"trackId":"alphabet",
+"trackName":"",
+"bundleId":"$(PRODUCT_BUNDLE_IDENTIFIER)",
+
+"primaryGenreName":"Utilites",
+"primaryGenreId":"utilites",
+"genres":["Utilites", "Productivity"],
+"genreIds":["utilites", "productivity"],
+"screenshotUrls":[],
+"ipadScreenshotUrls":[],
+
+"version":"1.1.0.1708230",
+"releaseNotes":"\n1. UI flow changes\n2. Add social network sharing\n3. Include Game Center management\n4. Add Settings\n5. Animations and effect sounds\n6. bug fix\n\n",
+"description":"\n\nSwipe(four directions: up, down, left, right) on the board to move all pieces. same pieces merge into one higher letter when they touched.\n\nThe game organized by levels and the final goals goes through the whole Alphabet to get Z for A.\n\nYou don't have to worry about losing your current game or level because the game will be stored on your device automatically.\n\n",
+"releaseDate":"2017-08-23 18:31:43",
+"sellerName":"Oueway",
+
+"build":{"color":"#7d0d16", "requiredOS":"iOS 7+", "arch":"32,64-bit", "server":"Production", "type":"Internal", "shortName":"", "build":"20170823_1708230"},
+
+"trackCensoredName":"",
+"trackViewUrl":"",
+"contentAdvisoryRating":"4+",
+"artworkUrl100":"",
+"languageCodesISO2A":["EN","ZH"],
+"fileSizeBytes":"12918590",
+"averageUserRatingForCurrentVersion":1.0,
+"userRatingCountForCurrentVersion":1,
+"trackContentRating":"4+",
+"averageUserRating":2.5,
+"userRatingCount":54
+}]
+}

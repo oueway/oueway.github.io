@@ -1,0 +1,46 @@
+[
+  {
+    "catalog": {
+      "query": "//div[@class='centent']/ul/li"
+    },
+    "name": "飘天文学网",
+    "page": {
+      "previousTitle": "上一章",
+      "previousLinkQuery": "//div[@class='toplink']/a",
+      "nextTitle": "下一章",
+      "titleQuery": "//body/h1",
+      "nextLinkQuery": "//div[@class='toplink']/a",
+      "contentQuery": "//body"
+    },
+    "capture": {
+      "catalogScript": "var returnValue = null;\nvar imgs = document.getElementsByTagName('img');\nfor (var i = 0; i < imgs.length; i++) {\n  var img = imgs[i];\n  if (img.src.includes('/images/dian.gif')) {returnValue = img.parentNode.href; break;}\n}\nreturnValue",
+      "nameQuery": "//h1/return[@return='innerText']"
+    },
+    "url": "https://www.ptwxz.com",
+    "textEncode": "gbk"
+  },
+  {
+    "name": "爱下电子书",
+    "url": "https://ixdzs8.com",
+    "textEncode": "utf-8",
+    "pcVersion": true,
+    "capture": {
+      "catalogContentQueries": [
+          "//main/div[@class='panel']/h2[@class='catalog']/span[@class='sub-text-r']/return[@return='innerText']",
+          "//div[@id='a-list']/return[@return='innerHTML']"
+      ],
+      "nameQuery": "//div[@class='novel']/div[@class='n-text']/h1/return[@return='innerText']"
+    },
+    "catalog": {
+      "query": "//ul[@class='u-chapter']/li"
+    },
+    "page": {
+      "previousTitle": "上一章",
+      "previousLinkQuery": "//div[@class='chapter-act']/a",
+      "nextTitle": "下一章",
+      "titleQuery": "//article[@class='page-content']/h3",
+      "nextLinkQuery": "//div[@class='chapter-act']/a",
+      "contentQuery": "//article[@class='page-content']/section"
+    }
+  }
+]

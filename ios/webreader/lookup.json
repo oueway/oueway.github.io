@@ -1,0 +1,46 @@
+{
+"resultCount":1,
+"results": [
+{
+"kind":"software", "features":[],"wrapperType":"software","isGameCenterEnabled":false,
+
+"supportedDevices":["iPhone7Plus", "iPhone7", "iPhone6sPlus", "iPhone6s", "iPhone6Plus", "iPhone6", "iPhone5s", "iPhone5c", "iPadMini4G", "iPhone4S", "iPhone5", "iPadFourthGen4G", "iPad2Wifi", "iPad23G", "iPhone-3GS", "iPodTouchFifthGen", "iPadMini", "iPadFourthGen", "iPhone4", "iPodTouchourthGen", "iPadThirdGen", "iPadThirdGen4G"],
+"artistViewUrl":"",
+"artworkUrl60":"",
+"artworkUrl512":"",
+"artistId":"oueway",
+"artistName":"Oueway",
+"currency":"USD", "price":0.00, "formattedPrice":"Free",
+
+"trackId":"webreader",
+"trackName":"藏经阁",
+"bundleId":"$(PRODUCT_BUNDLE_IDENTIFIER)",
+
+"primaryGenreName":"Utilites",
+"primaryGenreId":"utilites",
+"genres":["Utilites", "Productivity"],
+"genreIds":["utilites", "productivity"],
+"screenshotUrls":[],
+"ipadScreenshotUrls":[],
+
+"version":"1.0.0.1707210",
+"releaseNotes":"\n\n* init release\n\n\n",
+"description":"\n\n* init release\n\n\n",
+"releaseDate":"2017-07-25 19:21:14",
+"sellerName":"Oueway",
+
+"build":{"color":"#7d0d16", "size":"10MB", "requiredOS":"iOS 9+", "arch":"32,64-bit", "server":"Production", "type":"Internal", "shortName":"藏经阁", "build":"20170721_1707210"},
+
+"trackCensoredName":"",
+"trackViewUrl":"",
+"contentAdvisoryRating":"4+",
+"artworkUrl100":"",
+"languageCodesISO2A":["EN","ZH"],
+"fileSizeBytes":"8768044",
+"averageUserRatingForCurrentVersion":1.0,
+"userRatingCountForCurrentVersion":1,
+"trackContentRating":"4+",
+"averageUserRating":2.5,
+"userRatingCount":54
+}]
+}

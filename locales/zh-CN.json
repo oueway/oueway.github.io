@@ -1,0 +1,25 @@
+{
+  "BRAND": "Oueway",
+  "Home": "首页",
+  "CONTACT": "联系我们",
+  "About": "关于",
+  "COPYRIGHT": "版权所有 © 2017 {brand} 工作室",
+  "Privacy": "隐私",
+  "REPORT_ISSUE": "报告错误",
+  "Products": "产品",
+  "Country and Language": "国家和语言",
+
+  "ios": "iOS",
+  "android": "Android",
+  "mac": "Mac",
+  "windows": "Windows",
+  
+  "NO_PRODUCTS": "{platform}产品还没有上架.",
+
+  "WECHAT_OFFICIAL": "微信公众号",
+  "OFFICIAL_ACCOUNT": "请在微信中搜索公众号: 初绿扣",
+  "SCAN_OR":"扫描二维码关注",
+  "Email Us": "给我们发邮件",
+
+  "ABOUT_DETAILS":"{brand} 工作室是为了技术研究和技术实践。"
+}

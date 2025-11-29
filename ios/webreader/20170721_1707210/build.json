@@ -1,0 +1,15 @@
+{
+"supportedDevices":["iPhone5s", "iPhone5c", "iPadMini4G", "iPhone4S", "iPhone5", "iPadFourthGen4G", "iPad2Wifi", "iPad23G", "iPhone-3GS", "iPodTouchFifthGen", "iPadMini", "iPadFourthGen", "iPhone4", "iPodTouchourthGen", "iPadThirdGen", "iPadThirdGen4G"],
+
+"trackId":"webreader",
+"trackName":"藏经阁",
+"bundleId":"$(PRODUCT_BUNDLE_IDENTIFIER)",
+
+"version":"1.0.0.1707210",
+"releaseNotes":"<br><br>* init release<br><br><br>",
+"description":"<br><br>* init release<br><br><br>",
+"releaseDate":"2017-07-25 19:21:14",
+"sellerName":"Oueway",
+
+"build":{"color":"#7d0d16", "size":"10MB", "requiredOS":"iOS 9+", "arch":"32,64-bit", "server":"Production", "type":"Internal", "shortName":"藏经阁", "build":"20170721_1707210"}
+}

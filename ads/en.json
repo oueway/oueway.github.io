@@ -1,0 +1,22 @@
+[
+{ "name":"Blue Cash Everyday® Card from American Express", 
+    "detail":"$100 back after you spend $1,000 in purchases in first 3 months of Card Membership. You will receive $100 back in the form of a statement credit.",  
+    "icon":"https://www.aexp-static.com/online/myca/shared/summary/cardasset/images/NUS000000180_480x304_STRAIGHT_96.jpg", 
+    "url":"http://refer.amex.us/AIGUOYp3tg?XLINK=MYCP"},
+{ "name":"Ebates Cash Back", 
+    "detail":"Join for Free & Get a $10 Cash Bonus & Earn Cash Back For Shopping!",  
+    "icon":"//static.ebates.com/global_files/fonts/svg/logo-ebates-rakuten.svg", 
+    "url":"https://www.ebates.com/r/BRANDE1576?eeid=28585"},
+{ "name":"BeFrugal Cash Back", 
+    "detail":"Earn up to 40% Cash Back at 5000+ Stores, get $10 welcome bonus, and it's completely free to join!",  
+    "icon":"//btn.bfrl.us/refer/banners/befrugal-cashback-468x60-button2.png", 
+    "url":"https://www.befrugal.com/referral/?ref=LZZIPGG"},
+{ "name":"Discover Credit Card", 
+    "detail":"Become a Discover Cardmember and get a $50 Cashback Bonus when you make your first purchase within three months. Then, earn rewards with every purchase after that.",  
+    "icon":"https://www.discover.com/credit-cards/images/cards-stack-discover-it-cash-card.png", 
+    "url":"https://refer.discover.com/s/trbf6"},
+{ "name":"Top Cash Back", 
+    "detail":"Hey, I’m a member of TopCashback, and I’ve made some great savings so far on my online shopping. There are no catches, and it's completely free to join. So, why don’t you join too?",  
+    "icon":"https://www.topcashback.com/images/gecko-images/tcb-logo-brand.png", 
+    "url":"https://www.topcashback.com/ref/brandee83"}
+]
