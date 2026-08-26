@@ -20,6 +20,30 @@
     "textEncode": "gbk"
   },
   {
+      "name": "全本小说网",
+      "url": "https://www.quanben-xiaoshuo.com",
+      "pcVersion": false,
+      "textEncode": "utf-8",
+      "capture": {
+          "catalogContentQueries": [
+              "//div[@class='box']/div[@class='content']/return[@return='innerHTML']"
+          ],
+          "nameQuery": "//div[@class='box']/h1[@class='title']/return[@return='innerText']"
+      },
+      "catalog": {
+          "query": "//ul[@class='list']/li",
+          "reverse": false
+      },
+      "page": {
+          "previousTitle": "上一章",
+          "previousLinkQuery": "//div[@class='box']/div[@class='tc']/a[@class='button']",
+          "nextTitle": "下一章",
+          "titleQuery": "//div[@class='box']/h1[@class='title']",
+          "nextLinkQuery": "//div[@class='box']/div[@class='tc']/a[@class='button']",
+          "contentQuery": "//div[@id='articlebody']"
+      }
+  },
+  {
     "name": "爱下电子书",
     "url": "https://ixdzs8.com",
     "textEncode": "utf-8",
